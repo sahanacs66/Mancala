@@ -51,7 +51,7 @@ class MancalaGame:
             cases where a player's last stone lands in one of their own small
             positions, and when a player's last stone lands in their own mancala.
             """
-        ## Finish me! ##
+       
         oldstate = list(state)
         # the number of iterations to add 1 stone to each mancala
         iter = list(range(oldstate[action]))
@@ -132,7 +132,7 @@ class MancalaGame:
             Return True if the game is over in the given state, False otherwise.
             The game is over if either player has no stones left in their small positions.
             """
-        ## Finish me! ##
+       
         player_state1 = list(state[:self.size])
         player1 = all(v == 0 for v in player_state1)
         player_state2 = list(state[self.size+1:self.size*2+1])
@@ -145,7 +145,7 @@ class MancalaGame:
             If the game is over and one player still has stones on their side,
             those stones are added to that player's score.
         """
-            ## Finish me! ##
+           
         score1 = 0
         score2 = 0
         player_state1 = list(state[:self.size])
